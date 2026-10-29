@@ -1,0 +1,126 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x178c
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xcb8
+load:0x403cb700,len:0x2db0
+entry 0x403c8914
+[0;32mI (27) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Oct 29 2026 11:47:14[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v0.2[0m
+[0;32mI (35) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (40) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (73) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (80) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  3 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (95) boot:  4 ota_0            OTA app          00 10 00190000 00180000[0m
+[0;32mI (103) boot:  5 ota_1            OTA app          00 11 00310000 00180000[0m
+[0;32mI (110) boot:  6 storage          Unknown data     01 82 00490000 00370000[0m
+[0;32mI (118) boot: End of partition table[0m
+[0;32mI (122) boot: Defaulting to factory image[0m
+[0;32mI (127) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=26d24h (159012) map[0m
+[0;32mI (164) esp_image: segment 1: paddr=00036d4c vaddr=3fc99500 size=04988h ( 18824) load[0m
+[0;32mI (168) esp_image: segment 2: paddr=0003b6dc vaddr=40374000 size=0493ch ( 18748) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=9eaf4h (649972) map[0m
+[0;32mI (295) esp_image: segment 4: paddr=000deb1c vaddr=4037893c size=10b68h ( 68456) load[0m
+[0;32mI (319) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (319) boot: Disabling RNG early entropy source...[0m
+[0;32mI (331) cpu_start: Multicore app[0m
+[0;32mI (340) cpu_start: Pro cpu start user code[0m
+[0;32mI (340) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (340) app_init: Application information:[0m
+[0;32mI (343) app_init: Project name:     led_blink_idf[0m
+[0;32mI (348) app_init: App version:      1[0m
+[0;32mI (353) app_init: Compile time:     Oct 29 2026 11:46:31[0m
+[0;32mI (358) app_init: ELF file SHA256:  88000ebbf...[0m
+[0;32mI (364) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (370) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (374) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (379) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (384) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (391) heap_init: At 3FCA2080 len 00047690 (285 KiB): RAM[0m
+[0;32mI (397) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (404) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (410) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (417) spi_flash: detected chip: gd[0m
+[0;32mI (420) spi_flash: flash io: dio[0m
+[0;32mI (425) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (431) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (438) main_task: Started on CPU0[0m
+[0;32mI (468) main_task: Calling app_main()[0m
+[0;32mI (468) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (488) esp_ota_ops: Running firmware is factory[0m
+[0;32mI (488) MAIN_APP: LED test started on GPIO 2[0m
+[0;32mI (488) MAIN_APP: Initializing WiFi...[0m
+[0;32mI (498) pp: pp rom version: e7ae62f[0m
+[0;32mI (498) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (508) wifi:wifi driver task: 3fcaccfc, prio:23, stack:6656, core=0[0m
+[0;32mI (518) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (518) wifi:wifi certification version: v7.0[0m
+[0;32mI (518) wifi:config NVS flash: enabled[0m
+[0;32mI (518) wifi:config nano formating: disabled[0m
+[0;32mI (528) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (528) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (528) wifi:Init management short buffer num: 32[0m
+[0;32mI (538) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (538) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (548) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (548) wifi:Init static rx buffer num: 10[0m
+[0;32mI (548) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (558) wifi_init: rx ba win: 6[0m
+[0;32mI (558) wifi_init: accept mbox: 6[0m
+[0;32mI (568) wifi_init: tcpip mbox: 32[0m
+[0;32mI (568) wifi_init: udp mbox: 6[0m
+[0;32mI (568) wifi_init: tcp mbox: 6[0m
+[0;32mI (578) wifi_init: tcp tx win: 5760[0m
+[0;32mI (578) wifi_init: tcp rx win: 5760[0m
+[0;32mI (588) wifi_init: tcp mss: 1440[0m
+[0;32mI (588) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (588) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (598) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;32mI (638) wifi:mode : sta (48:ca:43:5c:8c:fc)[0m
+[0;32mI (638) wifi:enable tsf[0m
+[0;32mI (638) MAIN_APP: WiFi initialized, connecting to Excitel_PMR...[0m
+[0;32mI (638) MAIN_APP: WiFi STA started, connecting...[0m
+[0;32mI (648) MAIN_APP: ==========================================[0m
+[0;32mI (648) MAIN_APP: System Initialized:[0m
+[0;32mI (658) MAIN_APP: - LED blinking on GPIO 2[0m
+[0;32mI (658) MAIN_APP: - WiFi connecting to Excitel_PMR[0m
+[0;32mI (668) wifi:new:<1,1>, old:<1,0>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (678) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (678) MAIN_APP: - OTA check will run after WiFi connects[0m
+[0;32mI (678) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (688) MAIN_APP: ==========================================[0m
+[0;32mI (688) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (698) main_task: Returned from app_main()[0m
+[0;32mI (718) wifi:connected with Excitel_PMR, aid = 5, channel 1, 40U, bssid = 64:fb:92:86:ff:e2[0m
+[0;32mI (718) wifi:security: WPA2-PSK, phy: bgn, rssi: -48[0m
+[0;32mI (728) wifi:pm start, type: 1[0m
+
+[0;32mI (728) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (738) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (768) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (778) wifi:<ba-add>idx:0 (ifx:0, 64:fb:92:86:ff:e2), tid:0, ssn:0, winSize:64[0m
+[0;32mI (3748) esp_netif_handlers: sta ip: 192.168.1.30, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (3748) MAIN_APP: === WiFi Connected! IP: 192.168.1.30 ===[0m
+[0;32mI (3748) MAIN_APP: Creating OTA task...[0m
+[0;32mI (3748) MAIN_APP: OTA Task Started - Waiting for network stabilization...[0m
+[0;32mI (11758) MAIN_APP: Testing network connectivity...[0m
+[0;32mI (11958) MAIN_APP: Network connectivity verified[0m
+[0;32mI (11958) MAIN_APP: Starting OTA check...[0m
+[0;32mI (11958) MAIN_APP: Current Device Version: 1.0.3[0m
+[0;32mI (11958) MAIN_APP: Checking version from: http://192.168.1.17/ota/version.txt[0m
+[0;32mI (12028) MAIN_APP: Version HTTP status: 200[0m
+[0;32mI (12028) MAIN_APP: Server version: 1.0.3[0m
+[0;32mI (12028) MAIN_APP: Server Version: 1.0.3[0m
+[0;32mI (12028) MAIN_APP: Firmware is already up to date[0m
+[0;32mI (12038) MAIN_APP: OTA Task completed[0m

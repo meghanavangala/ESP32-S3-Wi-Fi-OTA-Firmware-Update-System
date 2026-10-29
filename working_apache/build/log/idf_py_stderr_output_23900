@@ -1,0 +1,7 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM3 instead...[0m
+[0;33m--- esp-idf-monitor 1.8.0 on \\.\COM3 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is c1468f8f48e2e7fe64b1f2ca098aed3a3b3f2cdb317533c2bd72dd7d09f2e98e[0m
+[0m--- 0x40375a8c: [0;33mesp_restart_noos[0m[0m at [0;32mC:/esp/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m158[0m
+[0m
